@@ -35,16 +35,6 @@ while len(guessed_states) < 50:
         t.goto(int(state_data.x), int(state_data.y))
         t.write(guess)
 
-
-# states_to_learn.csv
-
-
-
-
-
-
-
-
 # Code to figure out the x, y coordinates in 50_states.csv enable to tweak coordinates
 
 # def get_mouse_click_coor(x, y):
