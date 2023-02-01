@@ -9,6 +9,7 @@ while is_on == True:
     word = input("Enter a word: ").upper()
     if word == "EXIT":
         is_on = False
+        break
     # List Comprehension
     output_list = [phonetic_dictionary[letter] for letter in word]
     print(output_list)
