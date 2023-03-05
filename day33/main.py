@@ -13,12 +13,9 @@ MY_LONG = -105.6975
 def is_iss_overhead():
     response = requests.get(url="http://api.open-notify.org/iss-now.json")
     response.raise_for_status()
-
     data = response.json()
-
     iss_longitude = float(data["iss_position"]["longitude"])
     iss_latitude = float(data["iss_position"]["latitude"])
-
     # Your position within +5 or -5 degrees of IIS position
     if MY_LAT-5 <= iss_latitude <= MY_LAT+5 and MY_LONG-5 <= iss_longitude <= MY_LONG+5:
         return True
@@ -36,7 +33,6 @@ def is_night():
     time_now = dt.datetime.now()
     formatted_time = time_now.strftime("%I:%M:%S %p")
     formatted_time = (formatted_time.split(":")[0])
-    
     # If true its dark outside
     if time_now >= sunset or time_now <= sunrise:
         return True
