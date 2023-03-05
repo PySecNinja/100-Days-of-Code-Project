@@ -10,4 +10,6 @@ https://kanye.rest/
 
 https://www.latlong.net/
 
-https://sunrise-sunset.org/api
+Use the link above to get current coordinates location
+
+https://sunrisesunset.io/api/
