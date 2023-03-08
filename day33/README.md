@@ -32,7 +32,7 @@ nohup python3 main.py &
 kill %1
 ```
 
-##Kayne west quote API
+## Kayne west quote API
 https://kanye.rest/
 
 ## To get current coordinates of your location:
