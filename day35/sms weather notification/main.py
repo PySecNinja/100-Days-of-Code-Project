@@ -1,3 +1,11 @@
+"""
+USAGE - This code fetches weather data from OpenWeatherMap API for a location specified 
+        by the latitude and longitude, and then checks if it will snow in the next 12 hours. 
+        If it will snow, the code sends a text message via Twilio API to a specified phone number.
+        
+AUTHOR - https://github.com/Ahendrix9624/
+"""
+
 import requests
 import os
 from twilio.rest import Client
